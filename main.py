@@ -12,6 +12,8 @@ from sklearn.cluster import DBSCAN
 from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics.cluster import completeness_score
 from sklearn.cluster import AgglomerativeClustering
+from sklearn.metrics import jaccard_score
+
 
 if __name__ == '__main__':
     print(0)
