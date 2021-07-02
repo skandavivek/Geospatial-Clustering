@@ -156,13 +156,13 @@ if __name__ == '__main__':
     model = AgglomerativeClustering(distance_threshold=.2, n_clusters=None)
     model = model.fit(np.radians(X_G3))
     ag_labels = model.labels_
-    nc_ag, ns_ag = plot1(G, ids_G3, ag_labels, 'hierarch_calib_G.png')
+    nc_ag, ns_ag = plotting.plot1(G, ids_G3, ag_labels, 'hierarch_calib_G.png')
 
     #Agglomerative clustering with 3 clusters
     model = AgglomerativeClustering(n_clusters=3)
     model = model.fit(np.radians(X_G3))
     ag_3_labels = model.labels_
-    nc_ag_3, ns_ag_3 = plot1(G, ids_G3, ag_3_labels, 'hierarch_calib_3.png')
+    nc_ag_3, ns_ag_3 = plotting.plot1(G, ids_G3, ag_3_labels, 'hierarch_calib_3.png')
 
     #jaccard scores for clustering algorithms
 
